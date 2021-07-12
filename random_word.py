@@ -7,8 +7,8 @@ from PyDictionary import PyDictionary
 import pronouncing
 dictionary=PyDictionary()
 
-account_sid = 'AC1edf91ee7430441e1cd70de954b65a56'
-auth_token = 'ccf4e1596ae8e8d2f88fc1a00bc244e4'
+account_sid = 'place acc sid here '
+auth_token = 'place acc token here '
 client = Client(account_sid, auth_token)
 
 
@@ -36,7 +36,7 @@ try:
                     .create(
                         body=str(word_of_the_day),
                         from_='whatsapp:+14155238886',
-                        to='whatsapp:+919676207613'
+                        to='whatsapp:"put whatsapp number here"'
                     )
 
     print(message.sid)
